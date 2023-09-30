@@ -1,5 +1,25 @@
-*{
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&display=swap');
+
+* {
    box-sizing: border-box;
    margin: 0;
    padding: 0;
+}
+
+:root {
+   --black: #212121;
+   --gray: #9095A0FF;
+   --white: #FFFFFF;
+   --darkturquoise: #027E79;
+   --turquoise: #00E0F5;
+   --pink: #E500FF;
+   --darkpink: #A700CC;
+}
+
+
+
+body {
+   background-color: var(--black);
+   color: var(--white);
+   font-family: 'Roboto', sans-serif;
 }
