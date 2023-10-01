@@ -18,5 +18,9 @@ Download Git Bash | https://git-scm.com/downloads
 
 
 # HOW TO DO PULL REQUEST TO MAIN BRANCH
-1. CREAR UNA NUEVA RAMA 
+1. CREAR UNA NUEVA RAMA | EJEMPLO -> cenfotec-branch -> Verificar que esta en esa rama
+2. HACER TODOS LOS CAMBIOS 
+3. Añadir los cambios al stage -> Commit
+4. Push 
+5. Ir a al repositorio y hacer pull request y poner el comentario
 
