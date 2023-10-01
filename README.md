@@ -18,5 +18,5 @@ Download Git Bash | https://git-scm.com/downloads
 
 
 # HOW TO DO PULL REQUEST TO MAIN BRANCH
-1. CREAR UNA NUEVA RAMA 
+1. CREAR UNA NUEVA RAMA MAIN TEASJEDPASOJDJ
 
