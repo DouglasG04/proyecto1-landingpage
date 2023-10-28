@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500&display=swap');
 
 * {
    box-sizing: border-box;
@@ -22,7 +22,7 @@
 body {
    background-color: var(--black);
    color: var(--white);
-   font-family: 'Roboto', sans-serif;
+   font-family: 'Roboto';
 }
 
 body, html {
@@ -116,3 +116,117 @@ body, html {
     background-position: center center;
 }
 */
+
+
+.our-team {
+   width: 830px;
+   margin: 0 auto;
+}
+
+.title {
+   text-align: center;
+}
+
+.title p {
+   color: var(--gray);
+   padding: 15px 150px;
+}
+
+
+.team-cards {
+   display: grid;
+   grid-template-columns: repeat(3, 1fr);
+   grid-template-rows: repeat(2, 1fr);
+   gap: 20px;
+}
+
+.team-cards>div:nth-child(odd) .member-img {
+   background-color: var(--pink);
+}
+
+.team-cards>div:nth-child(even) .member-img {
+   background-color: var(--turquoise);
+}
+
+.member-img {
+   border-top-right-radius: 10px;
+   border-top-left-radius: 10px;
+
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+.member-img img {
+   width: auto;
+   height: 20vh;
+   padding: 30px 0px 0px 0px;
+}
+
+
+.member-description {
+   height: 200px;
+   padding: 14px 10px;
+   border-bottom-left-radius: 10px;
+   border-bottom-right-radius: 10px;
+   background-color: #171A1FFF;
+
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   text-align: center;
+
+}
+
+.member-description h3 {
+   font-size: 16px;
+   font-weight: 600;
+
+   margin: 10px 0px 20px 0px;
+
+}
+
+.member-description p {
+   color: var(--gray);
+   margin-bottom: 5px;
+}
+
+.member-description h4 {
+   font-weight: 300;
+   color: var(--turquoise);
+   margin-bottom: 20px;
+}
+
+
+svg path:hover {
+   fill: #fff;
+   transition: 0.3s ease-in-out;
+}
+
+
+@media screen and (max-width: 768px) {
+   .title p {
+      padding: 15px 50px;
+   }
+
+   .our-team {
+      width: 600px;
+   }
+
+   .team-cards {
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: repeat(3, 1fr);
+   }
+}
+
+@media screen and (max-width: 576px) {
+   .our-team {
+      width: 400px;
+   }
+
+   .team-cards {
+      width: 100%;
+      grid-template-columns: repeat(1, 1fr);
+      grid-template-rows: repeat(6, 1fr);
+   }
+}
