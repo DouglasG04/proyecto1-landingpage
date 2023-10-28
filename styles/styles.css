@@ -25,78 +25,58 @@ body {
    font-family: 'Roboto';
 }
 
-body, html {
-   height: 100%;
-   margin: 0;
-   display: flex;
-   justify-content: center;
-   align-items: center;
-   background-color: #000000;
-   color: white;
+.about-us {
+   margin-top: 100px;
+   width: 130ch;
+   margin: 0 auto;
 }
 
-.container {
+.about-us .container {
    display: grid;
-   grid-template-columns: 1fr 1fr; 
-   gap: 20px;
-   justify-items: center;
-   width: 80%; 
+   grid-template-columns: repeat(2, 1fr);
 }
 
-.box {
+.about-us .box {
    display: flex;
    flex-direction: column;
    align-items: center;
-   border: 1px solid transparent; 
+   border: 1px solid transparent;
 }
 
-.left, .right {
+.about-us .left,
+.about-us .right {
    display: flex;
    align-items: center;
 }
 
-.leftBox {
+.about-us .leftBox {
    width: 50px;
    height: 50px;
-   margin-right: 20px; 
-   background: #333;
-}
-
-.rightBox {
-   width: 50px;
-   height: 50px;
-   margin-right: 20px; 
-   background: #333;
-}
-
-
-.leftBox {
+   margin-right: 20px;
    background-color: #00E0F5;
 }
 
-.rightBox {
+.about-us .rightBox {
+   width: 50px;
+   height: 50px;
+   margin-right: 20px;
    background-color: #A700CC;
 }
 
-.tittle h1 {
-   display: flex;
-   flex-direction: column;
-   max-width: 200px; 
+.text-right, .text-left {
+   margin-top: 15px;
 }
 
-.tittle h2 {
-   display: flex;
-   flex-direction: column;
-   max-width: 300px; 
-}    
-
-.text p {
+.text-left p {
    max-width: 400px;
 }
 
-.text {
-   margin-top: 10px; 
+.text-right p {
+   max-width: 555px;
 }
+
+
+
 /* 
 #hero{
     display: flex;
@@ -119,11 +99,13 @@ body, html {
 
 
 .our-team {
-   width: 830px;
+
+   width: 130ch;
    margin: 0 auto;
 }
 
-.title {
+.our-team .title {
+   margin-top: 100px;
    text-align: center;
 }
 
@@ -137,7 +119,7 @@ body, html {
    display: grid;
    grid-template-columns: repeat(3, 1fr);
    grid-template-rows: repeat(2, 1fr);
-   gap: 20px;
+   gap: 90px;
 }
 
 .team-cards>div:nth-child(odd) .member-img {
