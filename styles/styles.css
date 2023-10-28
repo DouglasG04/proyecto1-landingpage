@@ -75,8 +75,106 @@ body {
    max-width: 555px;
 }
 
+#logo-header {
+   display: flex;
+   align-items: center;
+   width: 12%; /* Ajusta el ancho del contenedor al 10% del nav */
+   height: 100%;
+}
+
+ul {
+   list-style: none;
+   padding: 0; /* Elimina el relleno predeterminado de la lista */
+}
+
+.navbar-right {
+   display: flex; /* Hace que los elementos de la lista se alineen horizontalmente */
+   justify-content: flex-end; /* Alinea los elementos de la lista a la derecha */
+   margin: 0; /* Elimina el margen predeterminado de la lista */
+   padding: 0; /* Elimina el relleno predeterminado de la lista */
+}
+
+.navbar-right li {
+   margin-left: 20px; /* Agrega un margen a la izquierda de cada elemento de la lista */
+   display: flex; /* Alinea verticalmente el texto con los íconos, si los hubiera */
+   align-items: center;
+}
+
+.navbar-default {
+   border-color: transparent;
+   background-color: #222;
+}
+
+/* Estilo para el nav (navbar) */
+.navbar {
+   font-weight: 700; /* Grosor de fuente para el nav */
+   background-color: #202020FF; /* Color de fondo del nav */
+   padding: 10px; /* Espaciado del nav */
+}
+
+/* Estilo para los elementos de la lista dentro del nav */
+.navbar .nav li {
+   font-size: 12px; /* Tamaño de fuente más pequeño para los elementos de la lista */
+}
+
+.navbar-default .nav li a {
+   font-family: Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif;
+   font-weight: 400;
+   letter-spacing: 1px;
+   color: #fff;
+   text-decoration: none; /* Elimina el subrayado de los enlaces */
+}
+
+.navbar-default .nav li a:hover {
+   text-decoration: underline; /* Agrega subrayado al pasar el mouse por encima de los enlaces */
+   text-align: center;
+}
 
 
+
+.hero {
+   display: flex;
+   flex-direction: column;
+   background-attachment: scroll;
+   background-image: url(assets/img/hero-image.jpg);
+   background-position: center center;
+   background-repeat: no-repeat;
+   background-size: cover;
+   opacity: 0.9;
+}
+
+#section-hero .intro-text {
+   text-align: center;
+   color: #fff;
+   padding-top: 100px;
+   padding-bottom: 70px;
+   align-items: center;
+   
+}
+
+@media(min-width:768px) {
+   #section-hero .intro-text {
+       padding-top: 300px;
+       padding-bottom: 200px;
+   }
+
+   #section-hero .intro-text .intro-lead-in {
+       margin-bottom: 25px;
+       font-family: "Droid Serif","Helvetica Neue",Helvetica,Arial,sans-serif;
+       font-size: 40px;
+       font-style: italic;
+       line-height: 40px;
+   }
+
+   #section-hero .intro-text .intro-heading {
+       margin-bottom: 50px;
+       text-transform: uppercase;
+       font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+       font-size: 75px;
+       font-weight: 700;
+       line-height: 75px;
+   }
+}
 /* 
 #hero{
     display: flex;
