@@ -310,3 +310,98 @@ svg path:hover {
       grid-template-rows: repeat(6, 1fr);
    }
 }
+
+.service {
+   margin-top: 100px;
+   margin-bottom: 100px;
+}
+
+.max-width {
+   max-width: 1300px;
+   padding: 0 45px;
+   margin: auto;
+}
+
+.max-width h1 {
+   text-align: center;
+   position: relative;
+   font-size: 50px;
+   font-weight: 500;
+   margin-bottom: 60px;
+   padding-bottom: 20px;
+}
+
+.content {
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: space-between;
+
+}
+
+.card {
+   padding: 50px 25px;
+   width: calc(26% - 20px);
+   border-radius: 6px;
+   background-color: #171A1FFF;
+   text-align: center;
+}
+
+.box h3 {
+   color: #DEE1E6FF;
+   margin-top: 20px;
+   margin-bottom: 20px;
+}
+
+.box p {
+   color: #9095A0FF;
+}
+
+
+.icon-1 {
+   width: 80px;
+   height: 80px;
+   background-color: #00A99BF2;
+   border-radius: 40px;
+   margin:0px auto;
+   display: grid;
+   place-content: center
+}
+
+.icon-2 {
+   width: 80px;
+   height: 80px;
+   background-color: #E600FFCF;
+   border-radius: 40px;
+   margin:0px auto;
+   display: grid;
+   place-content: center
+}
+
+.icon-3 {
+   width: 80px;
+   height: 80px;
+   background-color: #7F7F7FFF;
+   border-radius: 40px;
+   margin: 0px auto;
+   display: grid;
+   place-content: center;
+}
+
+
+.icon-4 {
+   width: 80px;
+   height: 80px;
+   background-color: #19C0E1DB;
+   border-radius: 40px;
+   margin:0px auto;
+   display: grid;
+   place-content: center
+}
+
+
+.icons {
+   width: 56px;
+   height: 57px;
+   display: grid;
+   place-content: center;
+}
