@@ -310,3 +310,89 @@ svg path:hover {
       grid-template-rows: repeat(6, 1fr);
    }
 }
+
+/* footer */
+.footer {
+   display: flex;
+   flex-direction: row;
+   flex-wrap: wrap;
+   align-items: center;
+   background-color: var(--black);
+   height: 330px;
+   font-family: 'Roboto';
+   /* position: fixed;
+   bottom: 0; */
+   width: 100%;
+   left: 0;
+}
+
+.footer p {
+   font-size: 16px;
+   color: var(--gray);
+
+}
+
+.logo{
+   height: 100%;
+}
+.title{
+   font-size: 30px;
+}
+
+.footer-container{
+   width: 33%;
+   height: 250px;
+   padding-top: 100px;
+}
+
+.footer-container-logo {
+text-align: center;
+   width: 33%;
+   height: 250px;
+}   
+
+.mid-container{
+   text-align: center;
+   align-self: center;
+   color: var(--white);
+   font-family: sans-serif;
+   line-height: 0.9;
+}
+.mid-container p{
+   font-weight: 100;
+   font-size: 14px;
+}
+.icons-container{
+   color: var(--turquoise);
+   font-size: 20px;
+}
+.cc{
+   margin-left: 41%;
+   margin-top: -95px;
+   height: 40px; 
+}
+
+.clase-liveShare-example{
+   height: 50px;
+}
+
+.suscribe {
+   color: var(--turquoise);
+}
+
+
+.sent-button {
+   background-color: var(--turquoise);
+   border: none;
+   width: 60px;
+   height: 25px;
+}
+
+.email-input {
+   background-color: transparent;
+   color: var(--gray);
+   border: 1px solid var(--gray);
+   width: 230px;
+   height: 21px;
+}
+
