@@ -11,50 +11,89 @@
 
 <body>
     <header>
-        <nav class="navbar navbar-default navbar-fixed-top navbar-shrink">
-            
-            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                <img id="logo-header" src="assets/img/devsolutions-horizontal.png" alt="Logo DevSolutions">
-                <ul class="nav navbar-nav navbar-right">
-                    <li class="hidden active">
-                        <a href="#page-top"></a>
+        <nav class="navbar">
+            <img id="logo-header" src="../assets/img/devsolutions-horizontal.png" alt="Logo DevSolutions">
+            <ul class="navbar-right">
+                <li>
+                    <a href="#aboutUs">Sobre Nosotros</a>
+                </li>
+
+                <li>
+                    <a href="#ourTeam">Nuestro Equipo</a>
+                </li>
+                <li>
+                    <a href="#projects">Proyectos</a>
+                </li>
+                <li>
+                    <a href="#services">Servicios</a>
+                </li>
+                <li>
+                    <a href="#contact">Contacto</a>
+                </li>
+            </ul>
+
+            <nav class="navbar-mobile">
+
+                <input type="checkbox" id="burgerCheckbox" class="burger-checkbox">
+                <label for="burgerCheckbox" class="burger-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24">
+                        <path fill="currentColor"
+                            d="M3 8h18a1 1 0 0 0 0-2H3a1 1 0 0 0 0 2Zm18 8H3a1 1 0 0 0 0 2h18a1 1 0 0 0 0-2Zm0-5H3a1 1 0 0 0 0 2h18a1 1 0 0 0 0-2Z" />
+                    </svg>
+                </label>
+                
+                <input type="checkbox" id="xClose" class="x-checkbox" style="display: none;">
+                <label for="xClose" class="close burger-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="40" height="20" viewBox="0 0 20 20">
+                        <path fill="currentColor" fill-rule="evenodd"
+                            d="M4.293 4.293a1 1 0 0 1 1.414 0L10 8.586l4.293-4.293a1 1 0 1 1 1.414 1.414L11.414 10l4.293 4.293a1 1 0 0 1-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 0 1-1.414-1.414L8.586 10L4.293 5.707a1 1 0 0 1 0-1.414Z"
+                            clip-rule="evenodd" />
+                    </svg>
+                </label>
+
+                <ul class="navbar-right-mobile">
+                    <li><a href="#aboutUs">Sobre Nosotros</a></li>
+                    <li>
+                        <a href="#ourTeam">Nuestro Equipo</a>
                     </li>
-                    <li class="">
-                        <a class="page-scroll" href="#">Sobre Nosotros</a>
-                    </li>
-                    <li class="">
-                        <a class="page-scroll" href="">Proyectos</a>
-                    </li>
-                    <li class="">
-                        <a class="page-scroll" href="">Servicios</a>
-                    </li>
-                    <li class="">
-                        <a class="page-scroll" href="">Contacto</a>
-                    </li>
+                    <li><a href="#projects">Proyectos</a></li>
+                    <li><a href="#services">Servicios</a></li>
+                    <li><a href="#contact">Contacto</a></li>
                 </ul>
-            </div>
+
+             
+            </nav>
+
         </nav>
+
+
     </header>
 
     <main>
-        
-        <section id="section-Hero">
+
+        <section id="sectionHero">
             <div class="hero">
-              <div class="intro-text">
-              
-                <div class=" intro-heading">Sobre Nosotros</div>
-                <div class="intro-lead-in">DevSolutions: Creación Digital Creativa e Innovadora.</div>
-              </div>
+                <div class="hero-descriptions">
+                    <div class="intro-heading">
+                        <h1>Sobre Nosotros</h1>
+                    </div>
+                    <div class="intro-lead-in">
+                        <p>
+                            DevSolutions: Creación Digital Creativa e Innovadora.
+                        </p>
+                    </div>
+                </div>
             </div>
-          </section>
-        <section id="#aboutUs" class="about-us">
+        </section>
+
+        <section id="aboutUs" class="about-us">
             <div class="container">
                 <div class="box">
                     <div class="content">
                         <div class="left">
                             <div class="leftBox"></div>
                             <div class="title">
-                                <h1>Vision</h1>
+                                <h3>Vision</h3>
                             </div>
                         </div>
                         <div class="text-left">
@@ -68,7 +107,7 @@
                         <div class="right">
                             <div class="rightBox"></div>
                             <div class="title">
-                                <h2>Mision</h2>
+                                <h3>Mision</h3>
                             </div>
                         </div>
                         <div class="text-right">
@@ -84,7 +123,7 @@
 
 
 
-        <section id="#ourTeam" class="our-team">
+        <section id="ourTeam" class="our-team">
             <div class="title">
                 <h2>Nuestro Equipo</h2>
                 <p>Descripción breve sobre las habilidades y responsabilidades de cada miembro en la empresa.</p>
@@ -203,9 +242,155 @@
 
             </div>
         </section>
+
+
+        <section id="projects">
+            <div class="container-project">
+                <div class="project-description">
+                    <div>
+                        <h2>Proyectos</h2>
+                        <p>Kupaa, la mejor pagina para poder adquirir, ofrecer sercicios en todas las partes del pais
+                        </p>
+                    </div>
+                    <a
+                        href="file:///C:/Users/dg367/Desktop/proyecto1-grupo2/src/public/pages/render-login/login.html">Ver</a>
+                </div>
+                <div class="project-img">
+                    <img src="../assets/img/kupaa.jpg" alt="proyecto kuppa">
+                </div>
+            </div>
+        </section>
+
+        <section id="services">
+            <h2>Servicios</h2>
+            <div class="container-services">
+                <div class="service-card">
+                    <div class="card-svg">
+                        <svg style="background-color: #00A99BF2; border-radius: 50%; padding: 10px 10px;"
+                            xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16">
+                            <path fill="currentColor"
+                                d="M14.25 2.1a1.25 1.25 0 0 0-1.17-.1L6.91 4.43a1.22 1.22 0 0 1-.46.09H2.5a1.25 1.25 0 0 0-1.25 1.25v.1H0v3h1.25V9a1.25 1.25 0 0 0 1.25 1.22L4 13.4a1.26 1.26 0 0 0 1.13.72h.63A1.25 1.25 0 0 0 7 12.87v-2.53l6.08 2.43a1.27 1.27 0 0 0 .47.09a1.29 1.29 0 0 0 .7-.22a1.25 1.25 0 0 0 .55-1V3.13a1.25 1.25 0 0 0-.55-1.03zm-8.5 3.67V9H2.5V5.77zm0 7.1h-.63l-1.23-2.65h1.86zm1.62-3.72A2.29 2.29 0 0 0 7 9V5.7a2.26 2.26 0 0 0 .37-.11l6.18-2.46v8.48zm7.46-3.03v2.5a1.25 1.25 0 0 0 0-2.5z" />
+                        </svg>
+                    </div>
+                    <div class="card-description">
+                        <h3>Marketing Digital</h3>
+                        <p>
+                            Manten a tus seguidores informados, nosotros Impulsamos tu presencia con nuestras
+                            estrategias de marketing digital
+                        </p>
+                    </div>
+                </div>
+
+                <div class="service-card">
+                    <div class="card-svg">
+
+                        <svg xmlns="http://www.w3.org/2000/svg"
+                            style="background-color: #E600FFCF; border-radius: 50%; padding: 10px 10px;"
+                            viewBox="0 0 48 48">
+                            <g fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round"
+                                stroke-width="4">
+                                <path
+                                    d="M21 6H9C7.34315 6 6 7.34315 6 9V31C6 32.6569 7.34315 34 9 34H39C40.6569 34 42 32.6569 42 31V21" />
+                                <path d="M24 34V42" />
+                                <path d="M32 6L28 10L32 14" />
+                                <path d="M38 6L42 10L38 14" />
+                                <path d="M14 42L34 42" />
+                            </g>
+                        </svg>
+
+                    </div>
+                    <div class="card-description">
+                        <h3>Desarrollo de Software</h3>
+                        <p>
+                            Desarrollamos software a la medida de tus necesidades, con las mejores tecnologías del
+                            mercado
+                        </p>
+                    </div>
+                </div>
+
+
+                <div class="service-card">
+                    <div class="card-svg">
+                        <svg xmlns="http://www.w3.org/2000/svg"
+                            style="background-color: #7F7F7FFF; border-radius: 50%; padding: 10px 10px;"
+                            viewBox="0 0 512 512">
+                            <path fill="currentColor"
+                                d="M256 32C174 69.06 121.38 86.46 32 96c0 77.59 5.27 133.36 25.29 184.51a348.86 348.86 0 0 0 71.43 112.41c49.6 52.66 104.17 80.4 127.28 87.08c23.11-6.68 77.68-34.42 127.28-87.08a348.86 348.86 0 0 0 71.43-112.41C474.73 229.36 480 173.59 480 96c-89.38-9.54-142-26.94-224-64Z" />
+                        </svg>
+                    </div>
+                    <div class="card-description">
+                        <h3>Seguridad en Linea</h3>
+                        <p>
+                            Manten a tus seguidores informados, nosotros Impulsamos tu presencia con nuestras
+                            estrategias de marketing digital
+                        </p>
+                    </div>
+                </div>
+
+                <div class="service-card">
+                    <div class="card-svg">
+                        <svg xmlns="http://www.w3.org/2000/svg"
+                            style="background-color: #19C0E1DB; border-radius: 50%; padding: 10px 10px;"
+                            viewBox="0 0 24 24">
+                            <g fill="none">
+                                <path
+                                    d="M24 0v24H0V0h24ZM12.593 23.258l-.011.002l-.071.035l-.02.004l-.014-.004l-.071-.035c-.01-.004-.019-.001-.024.005l-.004.01l-.017.428l.005.02l.01.013l.104.074l.015.004l.012-.004l.104-.074l.012-.016l.004-.017l-.017-.427c-.002-.01-.009-.017-.017-.018Zm.265-.113l-.013.002l-.185.093l-.01.01l-.003.011l.018.43l.005.012l.008.007l.201.093c.012.004.023 0 .029-.008l.004-.014l-.034-.614c-.003-.012-.01-.02-.02-.022Zm-.715.002a.023.023 0 0 0-.027.006l-.006.014l-.034.614c0 .012.007.02.017.024l.015-.002l.201-.093l.01-.008l.004-.011l.017-.43l-.003-.012l-.01-.01l-.184-.092Z" />
+                                <path fill="currentColor"
+                                    d="M19 4a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h14Zm0 8H5v6h14v-6Zm0-6H5v4h14V6ZM7 7a1 1 0 1 1 0 2a1 1 0 0 1 0-2Zm3 0a1 1 0 1 1 0 2a1 1 0 0 1 0-2Zm3 0a1 1 0 1 1 0 2a1 1 0 0 1 0-2Z" />
+                            </g>
+                        </svg>
+                    </div>
+                    <div class="card-description">
+                        <h3>Desarrollo Web</h3>
+                        <p>
+                            Desarrollamos paginas web a la medida de tus necesidades, con las mejores tecnologías del mercado
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+        </section>
     </main>
 
-    <footer>
+
+
+
+    <footer id="contact">
+        <h2>Contactanos</h2>
+        <div class="container-footer">
+            <div>
+                <img src="../assets/img/devsolutions-vertical.png" alt="devsolutions vertical">
+            </div>
+            <div class="contact-description">
+                <div class="description1">
+
+                    <p>Costa Rica, San Jose</p>
+                    <p class="tel">+506 6100-0844</p>
+                    <div class="contact-icons">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                            <path fill="#2ebae8"
+                                d="M22.46 6c-.77.35-1.6.58-2.46.69c.88-.53 1.56-1.37 1.88-2.38c-.83.5-1.75.85-2.72 1.05C18.37 4.5 17.26 4 16 4c-2.35 0-4.27 1.92-4.27 4.29c0 .34.04.67.11.98C8.28 9.09 5.11 7.38 3 4.79c-.37.63-.58 1.37-.58 2.15c0 1.49.75 2.81 1.91 3.56c-.71 0-1.37-.2-1.95-.5v.03c0 2.08 1.48 3.82 3.44 4.21a4.22 4.22 0 0 1-1.93.07a4.28 4.28 0 0 0 4 2.98a8.521 8.521 0 0 1-5.33 1.84c-.34 0-.68-.02-1.02-.06C3.44 20.29 5.7 21 8.12 21C16 21 20.33 14.46 20.33 8.79c0-.19 0-.37-.01-.56c.84-.6 1.56-1.36 2.14-2.23Z" />
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                            <path fill="#4881eb"
+                                d="M12 2.04c-5.5 0-10 4.49-10 10.02c0 5 3.66 9.15 8.44 9.9v-7H7.9v-2.9h2.54V9.85c0-2.51 1.49-3.89 3.78-3.89c1.09 0 2.23.19 2.23.19v2.47h-1.26c-1.24 0-1.63.77-1.63 1.56v1.88h2.78l-.45 2.9h-2.33v7a10 10 0 0 0 8.44-9.9c0-5.53-4.5-10.02-10-10.02Z" />
+                        </svg>
+                    </div>
+                </div>
+                <div>
+                    <p class="rights-deserved">© 2023 Todos los derechos reservados.</p>
+                </div>
+
+            </div>
+            <div class="contact-email">
+                <h3>Ingresa tu correo electronico</h3>
+                <p>Inmediatamente nos pondremos en contracto contigo!</p>
+                <form>
+                    <input type="email" placeholder="devsolutions@gmail.com">
+                    <button>Enviar</button>
+                </form>
+            </div>
+        </div>
 
     </footer>
 </body>
